@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:weightSum="1" tools:context=".screen.portrait.principal.PortraitPrincipalView">
+
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="30dp"
+                   android:src="@drawable/fondo_blanco"
+                   android:contentDescription="@string/fondo_blanco"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="100dp"
+                   android:src="@drawable/icono_app"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal"
+                  android:weightSum="1">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/lema_aplicacion" android:textSize="20sp"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="30dp"
+                   android:src="@drawable/fondo_blanco"
+                   android:contentDescription="@string/fondo_blanco"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:baselineAligned="false">
+
+
+        <ImageButton
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/browser_icon"
+                android:id="@+id/imageButtonBrowser" android:gravity="fill_horizontal"
+                android:layout_gravity="center_horizontal"/>
+
+        <ImageView android:layout_width="30dp" android:layout_height="100dp"
+                   android:src="@drawable/fondo_blanco"
+                   android:contentDescription="@string/fondo_blanco"
+        />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/buscador" android:textSize="16sp"
+                  android:layout_marginLeft="20dp" android:layout_marginTop="10dp"
+        />
+
+        <ImageView android:layout_width="10dp" android:layout_height="10dp"
+                   android:src="@drawable/fondo_blanco"
+                   android:contentDescription="@string/fondo_blanco"
+        />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="10dp" android:layout_height="50dp"
+                   android:src="@drawable/fondo_blanco"
+                   android:contentDescription="@string/fondo_blanco"
+        />
+
+    </LinearLayout>
+
+   <!-- <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/icono_resultados"
+                android:id="@+id/ImageButtonResultados" android:gravity="fill_horizontal"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/resultados" android:textSize="16sp"
+                  android:layout_margin="1dp"
+        />
+    </LinearLayout>-->
+
+    <ImageButton
+            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/proximas_carreras"
+            android:id="@+id/imageButtonProximasCarreras" android:gravity="fill_horizontal"
+            android:paddingTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/proximasCarreras" android:textSize="16sp"
+              android:layout_margin="10dp"
+    />
+
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="data_label">Data label</string>
+    <string name="detail_button">Remove</string>
+    <string name="app_name">CanaryFit</string>
+    <string name="lema_aplicacion">Tu buscador de carreras en Canarias</string>
+    <string name="buscador">Buscar carreras</string>
+    <string name="proximasCarreras">Próximas carreras</string>
+    <string name="resultados">Resultados</string>
+    <string name="fondo_blanco">fondo blanco</string>
+    <string name="nombre_competicion">Nombre de la competición</string>
+    <string name="modalidad">Modalidad</string>
+    <string name="localidad">Localidad</string>
+    <string name="modalidad_asfalto">Asfalto</string>
+    <string name="modalidad_montaña">Montaña</string>
+    <string name="modalidad_obstaculos">Obstáculos</string>
+    <string name="modalidad_nado">Nado</string>
+    <string name="localidad_las_palmas">Las Palmas</string>
+    <string name="localidad_madrid">Madrid</string>
+    <string name="buscar">Buscar</string>
+    <string name="detalle">Detalles:</string>
+    <string name="inscribirse">Inscribirse</string>
+    <string name="guardarCalendario">Guardar en el calendario</string>
+</resources>

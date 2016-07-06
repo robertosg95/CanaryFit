@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="4dp"
+                  android:background="@drawable/custom_button_blue"
+                  android:orientation="vertical">
+
+
+    <TextView android:id="@+id/nombre_carrera"
+              android:textSize="@dimen/txt_field"
+
+              android:padding="@dimen/pad_field"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/textViewDescripcion"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/textViewDistancia"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/textViewZona"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/textViewFecha"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:id="@+id/textViewPrecio"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guardarCalendario"
+                android:background="@drawable/custom_button_blue"
+                android:id="@+id/guardarCalendario"
+                android:layout_gravity="bottom"
+        />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inscribirse"
+                android:background="@drawable/custom_button_blue"
+                android:id="@+id/inscripcion"
+                android:layout_gravity="bottom"
+
+        />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+

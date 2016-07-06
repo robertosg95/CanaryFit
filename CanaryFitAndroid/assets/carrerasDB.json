@@ -1,0 +1,65 @@
+[
+  {
+
+    "nombre":"Transgrancanaria",
+    "label":"Montaña",
+    "zona":"Gran Canaria",
+    "descripcion":"Carrera por montaña por el centro de Gran Canaria.",
+	"distancia": "120 Km",
+	"fecha": "30/03/2017",
+	"precio": "80 €",
+    "enlace": "http://www.transgrancanaria.net/",
+	"mapa": "https://www.google.es/maps/place/Agaete,+Las+Palmas/@28.1004374,-15.7039277,16z/data=!3m1!4b1!4m5!3m4!1s0xc408b65894cde91:0x2a021e37bef00582!8m2!3d28.1002592!4d-15.6996738"
+  },
+  {
+
+    "nombre":"Gran Canaria Marathon",
+    "label":"Asfalto",
+    "zona":"Gran Canaria",
+    "descripcion":"Carrera por la ciudad de Las Palmas de Gran Canaria.",
+	"distancia": "42 Km",
+	"fecha": "22/01/2017",
+	"precio": "35 €",
+    "enlace": "http://www.grancanariamaraton.com/",
+	"mapa": "https://www.google.es/maps/place/Las+Palmas+de+Gran+Canaria,+Las+Palmas/@28.117432,-15.4746368,13z/data=!3m1!4b1!4m5!3m4!1s0xc40950e91c097d1:0xab36b5ac5338ba65!8m2!3d28.1235459!4d-15.4362574"
+  },
+  {
+
+    "nombre":"Desafio Teide 360",
+    "label":"Ciclismo",
+    "zona":"Tenerife",
+    "descripcion":"Carrera ciclista por montaña en Tenerife.",
+	"distancia": "122 Km",
+	"fecha": "18/06/2017",
+	"precio": "20 €",
+    "enlace": "http://teide360.com/",
+	"mapa": "https://www.google.es/maps/place/Pico+del+Teide/@28.2723733,-16.6600177,14z/data=!3m1!4b1!4m5!3m4!1s0xc6a841219a46745:0x8da5b0b3d4897f14!8m2!3d28.2723384!4d-16.642508"
+
+  },
+  {
+
+    "nombre":"Travesia a nado El Reducto ",
+    "label":"Natacion",
+    "zona":"Lanzarote",
+    "descripcion":"Carrera a nado por la playa de Arrecife.",
+	"distancia": "1.6 Km",
+	"fecha": "11/09/2016",
+	"precio": "10 €",
+    "enlace": "http://www.lanzarotedeportes.com/t-el-reducto-13-septiembre",
+	"mapa": "https://www.google.es/maps/search/arrecife/@28.2723733,-16.6600177,14z"
+
+  },
+  {
+
+    "nombre":"Cochinero Challenge",
+    "label":"Obstaculos",
+    "zona":"Gran Canaria",
+    "descripcion":"Carrera de obstáculos en Ingenio.",
+	"distancia": "12 Km",
+	"fecha": "4/06/2017",
+	"precio": "40 €",
+    "enlace": "http://cochinerochallenge.com/",
+	"mapa": "https://www.google.es/maps/place/Ingenio,+Las+Palmas/@27.9223732,-15.4542086,14z/data=!3m1!4b1!4m5!3m4!1s0xc4098ec42310181:0x33620ca2c6ff71b8!8m2!3d27.9182821!4d-15.4331746"
+
+  }
+]

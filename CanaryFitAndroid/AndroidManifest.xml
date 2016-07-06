@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.CanaryFitAndroid">
+
+    <uses-sdk android:minSdkVersion="19"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+                 android:icon="@drawable/icono_app"
+                 android:name=".mediator.MasterDetailMediatorSingleton" android:theme="@style/AppTheme">
+
+
+
+        <activity
+                android:name=".screen.portrait.principal.PortraitPrincipalView"
+                android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".screen.landscape.principal.LandscapePrincipalView"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+                android:name=".screen.portrait.buscador.PortraitBuscadorView"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+                android:name=".screen.landscape.buscador.LandscapeBuscadorView"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity
+                android:name=".category.view.CategoryMasterView"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+
+        </activity>
+
+        <activity android:name=".product.view.ProductMasterView"/>
+        <activity android:name=".detail.view.DetailView"/>
+        <activity android:name=".screen.buscador.master.MasterBuscadorView"/>
+
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+</manifest>
