@@ -14,7 +14,6 @@ import com.example.CanaryFitAndroid.master.presenter.I_MasterPresenter;
 import es.ulpgc.eite.framework.android.AndroidScreenView;
 
 import java.util.List;
-
 public abstract class MasterView
         extends AndroidScreenView implements I_MasterView {
 

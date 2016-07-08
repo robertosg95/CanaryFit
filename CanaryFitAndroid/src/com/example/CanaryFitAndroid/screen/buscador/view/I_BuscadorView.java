@@ -6,5 +6,7 @@ public interface I_BuscadorView {
 
     String getTextBuscar();
 
+    void setTextBuscar(String txt);
+
     void setListener();
 }

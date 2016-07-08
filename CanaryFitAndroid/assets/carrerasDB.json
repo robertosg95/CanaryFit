@@ -39,7 +39,7 @@
   {
 
     "nombre":"Travesia a nado El Reducto ",
-    "label":"Natacion",
+    "label":"Natación",
     "zona":"Lanzarote",
     "descripcion":"Carrera a nado por la playa de Arrecife.",
 	"distancia": "1.6 Km",
@@ -52,7 +52,7 @@
   {
 
     "nombre":"Cochinero Challenge",
-    "label":"Obstaculos",
+    "label":"Obstáculos",
     "zona":"Gran Canaria",
     "descripcion":"Carrera de obstáculos en Ingenio.",
 	"distancia": "12 Km",

@@ -3,7 +3,7 @@ package com.example.CanaryFitAndroid.mediator;
 import com.example.CanaryFitAndroid.category.model.CategoryMasterModel;
 import com.example.CanaryFitAndroid.category.presenter.CategoryMasterPresenter;
 import com.example.CanaryFitAndroid.category.view.CategoryMasterView;
-import com.example.CanaryFitAndroid.database.DatabaseMasterDetail;
+import com.example.CanaryFitAndroid.database.DatabaseCanaryFit;
 import com.example.CanaryFitAndroid.detail.model.DetailModel;
 import com.example.CanaryFitAndroid.detail.presenter.DetailPresenter;
 import com.example.CanaryFitAndroid.detail.view.DetailView;
@@ -48,32 +48,32 @@ public class MasterDetailMediatorConfig extends MediatorConfig {
     private void setMasterDetailScreenCollection() {
         getScreens().add(new MediatorScreen(
                 CategoryMasterView.class, CategoryMasterPresenter.class,
-                CategoryMasterModel.class, DatabaseMasterDetail.class));
+                CategoryMasterModel.class, DatabaseCanaryFit.class));
         getScreens().add(new MediatorScreen(
                 ProductMasterView.class, ProductMasterPresenter.class,
-                ProductMasterModel.class, DatabaseMasterDetail.class));
+                ProductMasterModel.class, DatabaseCanaryFit.class));
         getScreens().add(new MediatorScreen(
                 DetailView.class, DetailPresenter.class,
-                DetailModel.class, DatabaseMasterDetail.class));
+                DetailModel.class, DatabaseCanaryFit.class));
 
         getScreens().add(new MediatorScreen(
                 MasterBuscadorView.class, MasterBuscadorPresenter.class,
-                MasterBuscadorModel.class, DatabaseMasterDetail.class));
+                MasterBuscadorModel.class, DatabaseCanaryFit.class));
 
         getScreens().add(new MediatorScreen(
-                PortraitPrincipalView.class, PortraitPrincipalPresenter.class, PrincipalModel.class, DatabaseMasterDetail.class
+                PortraitPrincipalView.class, PortraitPrincipalPresenter.class, PrincipalModel.class, DatabaseCanaryFit.class
         ));
 
         getScreens().add(new MediatorScreen(
-                LandscapePrincipalView.class, LandscapePrincipalPresenter.class, PrincipalModel.class, DatabaseMasterDetail.class
+                LandscapePrincipalView.class, LandscapePrincipalPresenter.class, PrincipalModel.class, DatabaseCanaryFit.class
         ));
 
         getScreens().add(new MediatorScreen(
-                PortraitBuscadorView.class, PortraitBuscadorPresenter.class, BuscadorModel.class, DatabaseMasterDetail.class
+                PortraitBuscadorView.class, PortraitBuscadorPresenter.class, BuscadorModel.class, DatabaseCanaryFit.class
         ));
 
         getScreens().add(new MediatorScreen(
-                LandscapeBuscadorView.class, LandscapeBuscadorPresenter.class, BuscadorModel.class, DatabaseMasterDetail.class
+                LandscapeBuscadorView.class, LandscapeBuscadorPresenter.class, BuscadorModel.class, DatabaseCanaryFit.class
         ));
 
     }

@@ -11,18 +11,11 @@ import com.example.CanaryFitAndroid.detail.presenter.I_DetailPresenter;
 import es.ulpgc.eite.framework.android.AndroidScreenView;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-;
-
-
 public class DetailView extends AndroidScreenView implements I_DetailView {
 
-    private I_DetailPresenter getDetailPresenter(){
-        return (I_DetailPresenter) getScreenPresenter();
-    }
+    private I_DetailPresenter getDetailPresenter(){ return (I_DetailPresenter) getScreenPresenter();}
 
     private int getDataLayout(){
         return R.layout.detail_view;
@@ -62,6 +55,9 @@ public class DetailView extends AndroidScreenView implements I_DetailView {
             @Override
             public void onClick(View v) {
                 inscripcion(data.getEnlace());
+
+//                Forma correcta de hacerlo:
+//                getDetailPresenter().inscripcion();
             }
         });
 
@@ -69,23 +65,38 @@ public class DetailView extends AndroidScreenView implements I_DetailView {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 try {
-                    guardarCalendario(data.getFecha(), data.getLabel());
+                    Date fecha = getDetailPresenter().parsearFecha(data.getFecha());
+                    guardarCalendario(fecha, data.getLabel());
+
+//                    Forma correcta de hacerlo:
+//                    getDetailPresenter().guardarCalendario(data.getFecha(), data.getLabel());
+
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
+
+
             }
         });
 
 
     }
 
-    public void guardarCalendario(String fecha, String nombre) throws ParseException {
+    /**
+     * Estos métodos deberían estar implementados en DetailPresenter:
+     */
 
-        SimpleDateFormat curFormater = new SimpleDateFormat("dd/MM/yyyy");
-        Date dateObj = curFormater.parse(fecha);
+    /**
+     * Método que nos lleva al calendario que el usuario tenga instalado para guardar el evento.
+     * Obtenido de http://stackoverflow.com/questions/3721963/how-to-add-calendar-events-in-android
+     * @param fecha del evento a guardar
+     * @param nombre del evento a guardar
+     */
+    public void guardarCalendario(Date fecha, String nombre) {
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(dateObj);
+        calendar.setTime(fecha);
         Intent intent = new Intent(Intent.ACTION_EDIT);
         intent.setType("vnd.android.cursor.item/event");
         intent.putExtra("beginTime", calendar.getTimeInMillis());
@@ -96,16 +107,16 @@ public class DetailView extends AndroidScreenView implements I_DetailView {
 
     }
 
+
+    /**
+     * Método que nos abre el navegador que el usuario tenga instalado en su dispositivo y nos lleva a la página de la competición
+     * @param enlace de la página a la que queremos ir
+     */
     public void inscripcion(String enlace){
         Intent intent = null;
         intent = new Intent(intent.ACTION_VIEW, Uri.parse(enlace));
         startActivity(intent);
     }
-
-
-
-
-
 
 
 }

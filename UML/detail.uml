@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-441.66666666666674" y="724.6666666666666">com.example.CanaryFitAndroid.detail.view.DetailView</node>
+    <node x="-300.66666666666674" y="378.66666666666663">com.example.CanaryFitAndroid.detail.state.DetailState</node>
+    <node x="10.15476190476187" y="401.16666666666663">com.example.CanaryFitAndroid.detail.model.DetailModel</node>
+    <node x="43.90476190476187" y="144.16666666666666">com.example.CanaryFitAndroid.detail.model.I_DetailModel</node>
+    <node x="-441.66666666666674" y="412.16666666666663">com.example.CanaryFitAndroid.detail.presenter.I_DetailPresenter</node>
+    <node x="-336.09523809523813" y="11.666666666666657">com.example.CanaryFitAndroid.detail.data.DetailData</node>
+    <node x="-441.66666666666674" y="622.6666666666666">com.example.CanaryFitAndroid.detail.view.I_DetailView</node>
+    <node x="-320.09523809523813" y="525.6666666666666">com.example.CanaryFitAndroid.detail.presenter.DetailPresenter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.CanaryFitAndroid.detail.model.DetailModel" target="com.example.CanaryFitAndroid.detail.model.I_DetailModel">
+      <point x="33.75" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.model.DetailModel" target="com.example.CanaryFitAndroid.detail.data.DetailData">
+      <point x="-33.75" y="-26.0" />
+      <point x="43.90476190476187" y="353.66666666666663" />
+      <point x="-21.09523809523813" y="353.66666666666663" />
+      <point x="135.0" y="158.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.presenter.DetailPresenter" target="com.example.CanaryFitAndroid.detail.data.DetailData">
+      <point x="62.333333333333314" y="-26.0" />
+      <point x="-164.26190476190482" y="500.66666666666663" />
+      <point x="-128.16666666666674" y="500.66666666666663" />
+      <point x="-128.16666666666674" y="353.66666666666663" />
+      <point x="-111.09523809523813" y="353.66666666666663" />
+      <point x="45.0" y="158.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.presenter.DetailPresenter" target="com.example.CanaryFitAndroid.detail.state.DetailState">
+      <point x="0.0" y="-26.0" />
+      <point x="-226.59523809523813" y="500.66666666666663" />
+      <point x="-219.66666666666674" y="500.66666666666663" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.presenter.DetailPresenter" target="com.example.CanaryFitAndroid.detail.presenter.I_DetailPresenter">
+      <point x="-62.33333333333334" y="-26.0" />
+      <point x="-288.92857142857144" y="500.66666666666663" />
+      <point x="-381.16666666666674" y="500.66666666666663" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.view.DetailView" target="com.example.CanaryFitAndroid.detail.view.I_DetailView">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.detail.state.DetailState" target="com.example.CanaryFitAndroid.detail.data.DetailData">
+      <point x="40.5" y="-48.5" />
+      <point x="-179.16666666666674" y="353.66666666666663" />
+      <point x="-201.09523809523813" y="353.66666666666663" />
+      <point x="-45.0" y="158.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="0.9999999999998863" y="419.1428571428571" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

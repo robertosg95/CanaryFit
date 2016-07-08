@@ -22,5 +22,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: info.cukes:cucumber-junit:1.2.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: info.cukes:gherkin:2.12.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: info.cukes:cucumber-core:1.2.4" level="project" />
+    <orderEntry type="module" module-name="CanaryFitAndroid" scope="TEST" />
   </component>
 </module>

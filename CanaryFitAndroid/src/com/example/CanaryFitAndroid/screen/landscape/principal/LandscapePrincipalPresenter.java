@@ -28,14 +28,7 @@ public class LandscapePrincipalPresenter extends PrincipalPresenter {
         startNextScreenWithObserver(this, CanaryFitMediatorCode.PRINCIPAL_PROXIMAS_LANDSCAPE);
     }
 
-   /* @Override
-    public void imageButtonClickedResultados() {
 
-        setBtnClickedResultados(true);
-        debug("buttonClickedResultados", "clicked", getBtnClickedResultados());
-        startNextScreenWithObserver(this, CanaryFitMediatorCode.PRINCIPAL_RESULTADOS_LANDSCAPE);
-
-    }*/
 
 
 }

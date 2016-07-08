@@ -43,14 +43,7 @@ public abstract class PrincipalView extends AndroidScreenView implements I_Princ
             }
         });
 
-        /*ImageButton imagenResultados = (ImageButton) findViewById(R.id.ImageButtonResultados);
-        imagenResultados.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                getPrincipalPresenter().imageButtonClickedResultados();
-            }
-        });*/
 
     }
 

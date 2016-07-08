@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="100.5" y="0.0">com.example.CanaryFitAndroid.master.view.I_MasterView</node>
+    <node x="1.5" y="705.0">com.example.CanaryFitAndroid.category.presenter.CategoryMasterPresenter</node>
+    <node x="406.0" y="168.0">com.example.CanaryFitAndroid.master.model.MasterModel</node>
+    <node x="235.0" y="435.0">com.example.CanaryFitAndroid.master.state.MasterState</node>
+    <node x="0.0" y="537.0">com.example.CanaryFitAndroid.master.presenter.MasterPresenter</node>
+    <node x="30.0" y="435.0">com.example.CanaryFitAndroid.master.presenter.I_MasterPresenter</node>
+    <node x="488.0" y="435.0">com.example.CanaryFitAndroid.master.data.MasterData</node>
+    <node x="381.0" y="314.0">com.example.CanaryFitAndroid.category.model.CategoryMasterModel</node>
+    <node x="396.0" y="0.0">com.example.CanaryFitAndroid.master.model.I_MasterModel</node>
+    <node x="85.0" y="124.0">com.example.CanaryFitAndroid.master.view.MasterView</node>
+    <node x="0.0" y="293.0">com.example.CanaryFitAndroid.master.view.MasterView.MasterAdapter</node>
+    <node x="193.0" y="326.5">com.example.CanaryFitAndroid.category.view.CategoryMasterView</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.CanaryFitAndroid.master.model.MasterModel" target="com.example.CanaryFitAndroid.master.model.I_MasterModel">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.presenter.MasterPresenter" target="com.example.CanaryFitAndroid.master.presenter.I_MasterPresenter">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.category.presenter.CategoryMasterPresenter" target="com.example.CanaryFitAndroid.master.presenter.MasterPresenter">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.view.MasterView" target="com.example.CanaryFitAndroid.master.view.I_MasterView">
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.view.MasterView.MasterAdapter" target="com.example.CanaryFitAndroid.master.view.MasterView">
+      <point x="0.0" y="-48.5" />
+      <point x="86.5" y="268.0" />
+      <point x="130.25" y="268.0" />
+      <point x="-45.25" y="59.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.category.view.CategoryMasterView" target="com.example.CanaryFitAndroid.master.view.MasterView">
+      <point x="0.0" y="-15.0" />
+      <point x="264.5" y="268.0" />
+      <point x="220.75" y="268.0" />
+      <point x="45.25" y="59.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.category.model.CategoryMasterModel" target="com.example.CanaryFitAndroid.master.model.MasterModel">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="386.6666666666665" y="401.33333333333326" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

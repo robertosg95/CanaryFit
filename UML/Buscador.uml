@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="235.0" y="1029.0">com.example.CanaryFitAndroid.screen.buscador.model.BuscadorModel</node>
+    <node x="56.75" y="514.0">com.example.CanaryFitAndroid.master.view.I_MasterView</node>
+    <node x="333.25" y="292.5">com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorPresenter</node>
+    <node x="538.0" y="616.0">com.example.CanaryFitAndroid.screen.buscador.view.BuscadorView</node>
+    <node x="647.5" y="168.0">com.example.CanaryFitAndroid.master.model.MasterModel</node>
+    <node x="727.25" y="314.0">com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorModel</node>
+    <node x="815.25" y="514.0">com.example.CanaryFitAndroid.master.state.MasterState</node>
+    <node x="191.0" y="417.0">com.example.CanaryFitAndroid.screen.landscape.buscador.LandscapeBuscadorPresenter</node>
+    <node x="528.5" y="514.0">com.example.CanaryFitAndroid.screen.buscador.view.I_BuscadorView</node>
+    <node x="206.5" y="102.0">com.example.CanaryFitAndroid.master.presenter.MasterPresenter</node>
+    <node x="236.5" y="0.0">com.example.CanaryFitAndroid.master.presenter.I_MasterPresenter</node>
+    <node x="0.0" y="417.0">com.example.CanaryFitAndroid.screen.portrait.buscador.PortraitBuscadorPresenter</node>
+    <node x="210.25" y="840.5">com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorView</node>
+    <node x="0.0" y="949.0">com.example.CanaryFitAndroid.master.data.MasterData</node>
+    <node x="242.25" y="682.5">com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorView</node>
+    <node x="439.25" y="740.0">com.example.CanaryFitAndroid.screen.portrait.buscador.PortraitBuscadorView</node>
+    <node x="104.75" y="270.0">com.example.CanaryFitAndroid.screen.buscador.presenter.BuscadorPresenter</node>
+    <node x="637.5" y="0.0">com.example.CanaryFitAndroid.master.model.I_MasterModel</node>
+    <node x="41.25" y="638.0">com.example.CanaryFitAndroid.master.view.MasterView</node>
+    <node x="231.0" y="949.0">com.example.CanaryFitAndroid.screen.buscador.model.I_BuscadorModel</node>
+    <node x="865.5" y="190.0">com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorModel</node>
+    <node x="0.0" y="807.0">com.example.CanaryFitAndroid.master.view.MasterView.MasterAdapter</node>
+    <node x="606.25" y="740.0">com.example.CanaryFitAndroid.screen.landscape.buscador.LandscapeBuscadorView</node>
+    <node x="46.5" y="146.0">com.example.CanaryFitAndroid.screen.buscador.presenter.I_BuscadorPresenter</node>
+    <node x="416.5" y="146.0">com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorPresenter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.presenter.BuscadorPresenter" target="com.example.CanaryFitAndroid.master.presenter.MasterPresenter">
+      <point x="40.25" y="-48.5" />
+      <point x="225.5" y="245.0" />
+      <point x="254.0" y="245.0" />
+      <point x="-47.5" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.presenter.MasterPresenter" target="com.example.CanaryFitAndroid.master.presenter.I_MasterPresenter">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.view.MasterView.MasterAdapter" target="com.example.CanaryFitAndroid.master.view.MasterView">
+      <point x="0.0" y="-48.5" />
+      <point x="-45.25" y="59.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.presenter.BuscadorPresenter" target="com.example.CanaryFitAndroid.screen.buscador.presenter.I_BuscadorPresenter">
+      <point x="-40.25" y="-48.5" />
+      <point x="145.0" y="245.0" />
+      <point x="116.5" y="245.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorView" target="com.example.CanaryFitAndroid.master.view.MasterView">
+      <point x="-36.0" y="-15.0" />
+      <point x="246.25" y="782.0" />
+      <point x="177.0" y="782.0" />
+      <point x="45.25" y="59.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.landscape.buscador.LandscapeBuscadorView" target="com.example.CanaryFitAndroid.screen.buscador.view.BuscadorView">
+      <point x="0.0" y="-26.0" />
+      <point x="688.25" y="715.0" />
+      <point x="631.75" y="715.0" />
+      <point x="31.25" y="37.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorPresenter" target="com.example.CanaryFitAndroid.master.presenter.MasterPresenter">
+      <point x="-46.75" y="-26.0" />
+      <point x="380.0" y="245.0" />
+      <point x="349.0" y="245.0" />
+      <point x="47.5" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorView" target="com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorView">
+      <point x="36.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.portrait.buscador.PortraitBuscadorPresenter" target="com.example.CanaryFitAndroid.screen.buscador.presenter.BuscadorPresenter">
+      <point x="0.0" y="-26.0" />
+      <point x="85.5" y="392.0" />
+      <point x="145.0" y="392.0" />
+      <point x="-40.25" y="48.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorModel" target="com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorModel">
+      <point x="59.5" y="-48.0" />
+      <point x="905.75" y="289.0" />
+      <point x="946.0" y="289.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.model.BuscadorModel" target="com.example.CanaryFitAndroid.screen.buscador.model.I_BuscadorModel">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorPresenter" target="com.example.CanaryFitAndroid.screen.buscador.master.I_MasterBuscadorPresenter">
+      <point x="46.75" y="-26.0" />
+      <point x="473.5" y="245.0" />
+      <point x="504.5" y="245.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.model.MasterModel" target="com.example.CanaryFitAndroid.master.model.I_MasterModel">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.landscape.buscador.LandscapeBuscadorPresenter" target="com.example.CanaryFitAndroid.screen.buscador.presenter.BuscadorPresenter">
+      <point x="0.0" y="-26.0" />
+      <point x="285.0" y="392.0" />
+      <point x="225.5" y="392.0" />
+      <point x="40.25" y="48.5" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.view.MasterView" target="com.example.CanaryFitAndroid.master.view.I_MasterView">
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.view.BuscadorView" target="com.example.CanaryFitAndroid.screen.buscador.view.I_BuscadorView">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.buscador.master.MasterBuscadorModel" target="com.example.CanaryFitAndroid.master.model.MasterModel">
+      <point x="-59.5" y="-48.0" />
+      <point x="786.75" y="289.0" />
+      <point x="746.5" y="289.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.portrait.buscador.PortraitBuscadorView" target="com.example.CanaryFitAndroid.screen.buscador.view.BuscadorView">
+      <point x="0.0" y="-26.0" />
+      <point x="512.75" y="715.0" />
+      <point x="569.25" y="715.0" />
+      <point x="-31.25" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="392.66666666666663" y="641.8888888888889" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

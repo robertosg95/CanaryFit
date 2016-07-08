@@ -62,6 +62,11 @@ public abstract class MasterModel
         return (I_MasterDatabase) getScreenDatabase();
     }
 
+    /**
+     * Método que nos permite cargar el json de forma que después podamos mapearlo a java
+     * @param path nombre del archivo json dentro de la carpeta assets
+     * @return String con la información del json cargado
+     */
     public String loadJsonFromAsset(String path) {
 
         Application singleton = (Application) getMediator();
@@ -82,6 +87,12 @@ public abstract class MasterModel
         }
     }
 
+    /**
+     * Método que recupera la modalidad y lo guarda en MasterData
+     * @param jsonObject objeto del json modalidadDB
+     * @return el objeto MasterData con la modalidad actualizada
+     * @throws JSONException
+     */
     public MasterData getJavaObjectCategory(JSONObject jsonObject) throws JSONException {
 
         String label = jsonObject.getString("modalidad");
@@ -89,6 +100,12 @@ public abstract class MasterModel
         return new MasterData(label);
     }
 
+    /**
+     * Método que recupera la información de las carreras y las guarda en DetailData
+     * @param jsonObject objeto del json carrerasDB
+     * @return el objeto DetailData con la información actualizada
+     * @throws JSONException
+     */
     public DetailData getJavaObjectProduct(JSONObject jsonObject) throws JSONException {
 
         String nombre = jsonObject.getString("nombre");
@@ -106,3 +123,6 @@ public abstract class MasterModel
 
 
 }
+
+
+

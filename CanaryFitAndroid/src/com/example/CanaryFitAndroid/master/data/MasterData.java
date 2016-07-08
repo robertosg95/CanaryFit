@@ -1,6 +1,11 @@
 package com.example.CanaryFitAndroid.master.data;
 
-
+/**
+ * Clase con los elementos necesarios para cargar la pantalla category.
+ * Solo nos hace falta saber qué tipos de modalidad hay (modalidadDB).
+ * No lo podemos poner en un único json porque entonces si tuviéramos más de un elemento en cada modalidad se vería repetido en
+ * la pantalla category.
+ */
 import com.example.CanaryFitAndroid.database.I_Data;
 import org.droidpersistence.annotation.Column;
 import org.droidpersistence.annotation.PrimaryKey;

@@ -2,22 +2,23 @@ package com.example.CanaryFitAndroid.screen.buscador.master;
 
 import com.example.CanaryFitAndroid.detail.state.DetailState;
 import com.example.CanaryFitAndroid.master.presenter.MasterPresenter;
-import com.example.CanaryFitAndroid.state.BuscarState;
+import com.example.CanaryFitAndroid.mediator.CanaryFitMediatorCode;
+import com.example.CanaryFitAndroid.screen.buscador.state.BuscarState;
+import com.example.CanaryFitAndroid.screen.landscape.buscador.LandscapeBuscadorView;
+import com.example.CanaryFitAndroid.screen.portrait.buscador.PortraitBuscadorView;
 import es.ulpgc.eite.framework.core.screen.I_ScreenState;
 import es.ulpgc.eite.framework.core.screen.I_ScreenView;
 
-public class MasterBuscadorPresenter extends MasterPresenter implements I_MasterBuscadorPresenter{
-
-    private I_MasterBuscadorView getMasterBuscadorView(){ return (I_MasterBuscadorView) getScreenView(); }
+public class MasterBuscadorPresenter extends MasterPresenter{
 
     private I_MasterBuscadorModel getMasterBuscadorModel(){ return (I_MasterBuscadorModel) getScreenModel();}
 
-//    @Override
-//    public String recuperarTextoVista(){
-//        return getMasterBuscadorView().recuperarTexto();
-//    }
-//
-
+    /**
+     * Carga el estado de la pantalla. En este caso se debe recuperar el valor del texto almacenado en BuscarState
+     * @param view vista desde la que se viene
+     * @param code código que indica la siguiente transcición
+     * @param state objeto de la clase estado adecuada en cada caso
+     */
     @Override
     public void setScreenState(
             Class<? extends I_ScreenView> view, int code, I_ScreenState state) {
@@ -27,24 +28,19 @@ public class MasterBuscadorPresenter extends MasterPresenter implements I_Master
 
         if(state != null) {
 
-//            if(view.equals(MasterBuscadorView.class)
-//                    && code == CanaryFitMediatorCode.BUSCADOR_MASTER_PORTRAIT) {
-
+            if(view.equals(PortraitBuscadorView.class)
+                    && code == CanaryFitMediatorCode.BUSCADOR_MASTER_PORTRAIT) {
                 BuscarState _state = (BuscarState) state;
                 getMasterBuscadorModel().setTexto(_state.getText());
-//                getMasterBuscadorModel().setTexto(_state.getText());
-               // getDetailModel().setData(_state.getData());
-//            }
 
-//            if(view.equals(MasterBuscadorView.class)
-//                    && code == CanaryFitMediatorCode.BUSCADOR_MASTER_LANDSCAPE) {
-//
-//                BuscarState _state = (BuscarState) state;
-//                getMasterBuscadorModel().setTexto(_state.getText());
-//            }
+            }
 
+            if(view.equals(LandscapeBuscadorView.class)
+                    && code == CanaryFitMediatorCode.BUSCADOR_MASTER_LANDSCAPE) {
+                BuscarState _state = (BuscarState) state;
+                getMasterBuscadorModel().setTexto(_state.getText());
 
-
+            }
         }
 
     }
@@ -57,35 +53,6 @@ public class MasterBuscadorPresenter extends MasterPresenter implements I_Master
         return state;
     }
 
-   /* @Override
-    public I_ScreenState getNextState(Class<? extends I_ScreenView> view, int code) {
-        debug("getNextState", "view", view.getSimpleName());
-        debug("getNextState", "code", code);
-
-
-
-
-        return null;
-    }*/
-
-
-    /*@Override
-    public I_ScreenState updateObserverState(
-            Class<? extends I_ScreenView> view, int code, I_ScreenState state) {
-
-        debug("updateObserverState", "view", view.getSimpleName());
-        debug("updateObserverState", "code", code);
-
-
-        if(view.equals(MasterBuscadorView.class)
-                && code == CanaryFitMediatorCode.DELETE) {
-
-            finishScreen();
-        }
-
-        return null;
-
-    }*/
 
 
 

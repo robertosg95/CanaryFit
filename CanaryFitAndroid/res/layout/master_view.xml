@@ -5,7 +5,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-
+<!--
+    <TextView android:layout_width="match_parent"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="@string/modalidad_category"
+              android:layout_height="40dp"/>-->
 
     <ListView android:id="@+id/lst_master"
               android:layout_margin="2dp"

@@ -15,7 +15,6 @@ public abstract class PrincipalPresenter extends AndroidScreenPresenter implemen
 
     private Boolean _btnClickedProximasCarreras;
 
-    private Boolean _btnClickedResultados;
 
     public Boolean getBtnClickedBuscador() {
         return _btnClickedBuscador;
@@ -25,20 +24,12 @@ public abstract class PrincipalPresenter extends AndroidScreenPresenter implemen
         return _btnClickedProximasCarreras;
     }
 
-    public Boolean getBtnClickedResultados() {
-        return _btnClickedResultados;
-    }
-
     public void setBtnClickedBuscador(Boolean btnClicked) {
         _btnClickedBuscador = btnClicked;
     }
 
     public void setBtnClickedProximasCarreras(Boolean btnClicked) {
         _btnClickedProximasCarreras = btnClicked;
-    }
-
-    public void setBtnClickedResultados(Boolean btnClicked) {
-        _btnClickedResultados = btnClicked;
     }
 
     private I_PrincipalView getPrincipalView() {
@@ -50,9 +41,6 @@ public abstract class PrincipalPresenter extends AndroidScreenPresenter implemen
     }
 
 
-
-
-
     @Override
     public void createScreen() {
         debug("createScreen");
@@ -60,6 +48,15 @@ public abstract class PrincipalPresenter extends AndroidScreenPresenter implemen
         getPrincipalView().setLayout();
         getPrincipalView().setListener();
     }
+
+    public void changeRotation(int code){
+        debug("changeRotation", "code", code);
+
+        startNextScreenWithFinish(code, true);
+    }
+
+    //Métodos no necesarios, pero que el framework nos obliga a implementar:
+
 
     @Override
     public void backScreen() {
@@ -102,11 +99,7 @@ public abstract class PrincipalPresenter extends AndroidScreenPresenter implemen
         return null;
     }
 
-    public void changeRotation(int code){
-        debug("changeRotation", "code", code);
 
-        startNextScreenWithFinish(code, true);
-    }
 
 
 

@@ -16,8 +16,6 @@ public abstract class BuscadorView extends AndroidScreenView implements I_Buscad
         return (I_BuscadorPresenter) getScreenPresenter();
     }
 
-
-
     public abstract int getLayout();
 
     @Override
@@ -27,10 +25,24 @@ public abstract class BuscadorView extends AndroidScreenView implements I_Buscad
         setContentView(getLayout());
     }
 
+    /**
+     * Método para obtener el texto introducido
+     * @return el texto introducido en el buscador
+     */
     @Override
     public String getTextBuscar(){
         EditText texto = (EditText) findViewById(R.id.nombre_competicion);
         return texto.getText().toString();
+    }
+
+    /**
+     * Actualiza el texto en el buscador
+     * @param txt valor del nuevo texto
+     */
+    @Override
+    public void setTextBuscar(String txt){
+        EditText texto = (EditText) findViewById(R.id.nombre_competicion);
+        texto.setText(txt);
     }
 
     @Override
@@ -41,11 +53,7 @@ public abstract class BuscadorView extends AndroidScreenView implements I_Buscad
 
             @Override
             public void onClick(View v) {
-//                DetailData data = new DetailData();
-//                data.setTextoBuscar(txt);
-//                getDetailDatabase().saveDetailData(data);
-//                getBuscadorPresenter().buttonClickedBuscar();
-
+                //Pan para hoy, hambre para mañana:
                 /*
                 String txt = texto.getText().toString();
                 Bundle bundle = new Bundle();

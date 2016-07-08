@@ -27,12 +27,4 @@ public class PortraitPrincipalPresenter extends PrincipalPresenter {
         startNextScreenWithObserver(this, CanaryFitMediatorCode.PRINCIPAL_PROXIMAS_PORTRAIT);
     }
 
-   /* @Override
-    public void imageButtonClickedResultados() {
-
-        setBtnClickedResultados(true);
-        debug("buttonClickedResultados", "clicked", getBtnClickedResultados());
-        startNextScreenWithObserver(this, CanaryFitMediatorCode.PRINCIPAL_PROXIMAS_PORTRAIT);
-
-    }*/
 }

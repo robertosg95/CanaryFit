@@ -1,10 +1,11 @@
 package com.example.CanaryFitAndroid.detail.model;
 
 import com.example.CanaryFitAndroid.detail.data.DetailData;
-import com.example.CanaryFitAndroid.detail.presenter.I_DetailPresenter;
 import es.ulpgc.eite.framework.android.AndroidScreenModel;
 
-
+/**
+ * Clase utilizada para obtener y actualizar el dato que se muestra en la pantalla detail.
+ */
 public class DetailModel extends AndroidScreenModel implements I_DetailModel{
 
     private DetailData _data;
@@ -19,7 +20,5 @@ public class DetailModel extends AndroidScreenModel implements I_DetailModel{
         _data = data;
     }
 
-    private I_DetailPresenter getDetailPresenter(){
-        return (I_DetailPresenter) getScreenPresenter();
-    }
+
 }

@@ -5,11 +5,14 @@ import com.example.CanaryFitAndroid.database.I_Data;
 import org.droidpersistence.annotation.Column;
 import org.droidpersistence.annotation.PrimaryKey;
 import org.droidpersistence.annotation.Table;
-
+/**
+ *  Clase que contiene la tabla con todos nuestros elementos de la base de datos (carrerasDB)
+ */
 @Table(name="product_table")
 public class DetailData implements I_Data {
     @PrimaryKey(autoIncrement = true)
     @Column(name = "id")
+    //Clave primaria de nuestra tabla. No la creamos nosotros, sino que se crea automáticamente y se va incrementado.
     private Long id;
 
     @Column(name = "nombre")
@@ -42,15 +45,14 @@ public class DetailData implements I_Data {
     @Column(name = "enlace")
     private String enlace;
 
-//    @Column(name = "textoBuscar")
-//    private String textoBuscar;
-
 
     public DetailData() {
         setLabel("");
     }
 
-
+    /**
+     *Constructor con el que inicializamos las variables que necestimos cargar posteriormente.
+     */
     public DetailData(String nombre, String modalidad, String zone, String descrip, String distance, String date, String price, String link, String urlMapa) {
         setLabel(nombre);
         setModalidad(modalidad);
@@ -153,20 +155,13 @@ public class DetailData implements I_Data {
         this.enlace = enlace;
     }
 
-    //    public String getTextoBuscar() {
-//        return textoBuscar;
-//    }
-//
-//    public void setTextoBuscar(String textoBuscar) {
-//        this.textoBuscar = textoBuscar;
-//    }
 
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof DetailData){
             DetailData data = (DetailData) obj;
 
-            if(data.getId() == getId()){   //todo
+            if(data.getId() == getId()){
                 return true;
             }
         }

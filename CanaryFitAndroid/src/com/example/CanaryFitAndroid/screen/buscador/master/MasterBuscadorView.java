@@ -1,9 +1,11 @@
 package com.example.CanaryFitAndroid.screen.buscador.master;
 
-import android.os.Bundle;
 import com.example.CanaryFitAndroid.master.view.MasterView;
 
-public class MasterBuscadorView extends MasterView implements I_MasterBuscadorView {
+/**
+ *Necesitamos esta clase para que el mediador tenga claras las transiciones en cada momento, aunque no la vayamos a utilizar
+ */
+public class MasterBuscadorView extends MasterView {
 
 
 }

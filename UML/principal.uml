@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="205.0" y="681.0">com.example.CanaryFitAndroid.screen.portrait.principal.PortraitPrincipalPresenter</node>
+    <node x="10.0" y="168.0">com.example.CanaryFitAndroid.master.model.MasterModel</node>
+    <node x="0.0" y="681.0">com.example.CanaryFitAndroid.screen.landscape.principal.LandscapePrincipalPresenter</node>
+    <node x="599.0" y="615.0">com.example.CanaryFitAndroid.screen.portrait.principal.PortraitPrincipalView</node>
+    <node x="228.0" y="201.0">com.example.CanaryFitAndroid.screen.principal.model.I_PrincipalModel</node>
+    <node x="75.0" y="314.0">com.example.CanaryFitAndroid.screen.principal.model.PrincipalModel</node>
+    <node x="35.75" y="513.0">com.example.CanaryFitAndroid.screen.principal.presenter.PrincipalPresenter</node>
+    <node x="0.0" y="0.0">com.example.CanaryFitAndroid.master.model.I_MasterModel</node>
+    <node x="418.0" y="615.0">com.example.CanaryFitAndroid.screen.landscape.principal.LandscapePrincipalView</node>
+    <node x="532.25" y="513.0">com.example.CanaryFitAndroid.screen.principal.view.PrincipalView</node>
+    <node x="122.25" y="433.0">com.example.CanaryFitAndroid.screen.principal.presenter.I_PrincipalPresenter</node>
+    <node x="528.25" y="433.0">com.example.CanaryFitAndroid.screen.principal.view.I_PrincipalView</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.CanaryFitAndroid.screen.principal.presenter.PrincipalPresenter" target="com.example.CanaryFitAndroid.screen.principal.presenter.I_PrincipalPresenter">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.portrait.principal.PortraitPrincipalPresenter" target="com.example.CanaryFitAndroid.screen.principal.presenter.PrincipalPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="289.0" y="656.0" />
+      <point x="268.25" y="656.0" />
+      <point x="77.5" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.portrait.principal.PortraitPrincipalView" target="com.example.CanaryFitAndroid.screen.principal.view.PrincipalView">
+      <point x="0.0" y="-26.0" />
+      <point x="671.0" y="590.0" />
+      <point x="611.0" y="590.0" />
+      <point x="26.25" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.principal.model.PrincipalModel" target="com.example.CanaryFitAndroid.master.model.MasterModel">
+      <point x="-62.0" y="-37.0" />
+      <point x="137.0" y="289.0" />
+      <point x="109.0" y="289.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.landscape.principal.LandscapePrincipalView" target="com.example.CanaryFitAndroid.screen.principal.view.PrincipalView">
+      <point x="0.0" y="-26.0" />
+      <point x="498.5" y="590.0" />
+      <point x="558.5" y="590.0" />
+      <point x="-26.25" y="26.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.principal.view.PrincipalView" target="com.example.CanaryFitAndroid.screen.principal.view.I_PrincipalView">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.master.model.MasterModel" target="com.example.CanaryFitAndroid.master.model.I_MasterModel">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.principal.model.PrincipalModel" target="com.example.CanaryFitAndroid.screen.principal.model.I_PrincipalModel">
+      <point x="62.0" y="-37.0" />
+      <point x="261.0" y="289.0" />
+      <point x="289.0" y="289.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.CanaryFitAndroid.screen.landscape.principal.LandscapePrincipalPresenter" target="com.example.CanaryFitAndroid.screen.principal.presenter.PrincipalPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="92.5" y="656.0" />
+      <point x="113.25" y="656.0" />
+      <point x="-77.5" y="59.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8107714701601164" x="384.0" y="333.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

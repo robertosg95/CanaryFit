@@ -34,13 +34,6 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
         return (I_DetailModel) getScreenModel();
     }
 
-//    public I_MasterBuscadorModel getMasterBuscadorModel() {
-//        return (I_MasterBuscadorModel) getScreenModel();
-//    }
-
-
-
-
 
     @Override
     public void setListPosition(int position) {
@@ -82,6 +75,12 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
         debug("rotateScreen");
     }
 
+    /**
+     * Método que actualiza el estado de la pantalla
+     * @param view vista desde la que se viene
+     * @param code código que indica la siguiente transcición
+     * @param state objeto de la clase estado adecuada en cada caso
+     */
     @Override
     public void setScreenState(
             Class<? extends I_ScreenView> view, int code, I_ScreenState state) {
@@ -90,17 +89,6 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
         debug("setScreenState", "code", code);
 
         if(state != null) {
-
-
-//            if(view.equals(BuscadorView.class)
-//                    && code == CanaryFitMediatorCode.BUSCADOR_MASTER_PORTRAIT) {
-//
-//                BuscarState _state = (BuscarState) state;
-//                String texto = _state.getText();
-//                debug("setScreenState", "texto", texto);
-//
-//
-//            }
 
             if(view.equals(CategoryMasterView.class)
                     && code == CanaryFitMediatorCode.NULL) {
@@ -129,6 +117,10 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
         }
     }
 
+    /**
+     * Guarda el estado de la pantalla actual
+     * @return dicho estado
+     */
     @Override
     public I_ScreenState getScreenState() {
         debug("getScreenState");
@@ -138,6 +130,12 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
         return state;
     }
 
+    /**
+     * Indica el estado que debe tener la siguiente pantalla
+     * @param view vista a la que se quiere ir
+     * @param code código que indica la siguiente transcición
+     * @return dicho estado
+     */
     @Override
     public I_ScreenState getNextState(Class<? extends I_ScreenView> view, int code) {
         debug("getNextState", "view", view.getSimpleName());
@@ -161,14 +159,6 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
             MasterState state = new MasterState(data);
             return state;
         }
-        if(view.equals(DetailView.class)
-                && code == CanaryFitMediatorCode.SELECT) {
-
-            DetailState state = new DetailState((DetailData) getMasterModel().getData());
-            return state;
-        }
-
-
 
         return null;
     }
@@ -180,19 +170,17 @@ public abstract class MasterPresenter extends AndroidScreenPresenter
 
         debug("updateObserverState", "view", view.getSimpleName());
         debug("updateObserverState", "code", code);
-
-
-        if(view.equals(DetailView.class)
-                && code == CanaryFitMediatorCode.DELETE) {
-
-            debug("updateObserverState", "position", getMasterModel().getPosition());
-
-
-            resumeScreen();
-
-            return new DetailState();
-        }
-
+//
+//        if(view.equals(DetailView.class)
+//                && code == CanaryFitMediatorCode.DELETE) {
+//
+//            debug("updateObserverState", "position", getMasterModel().getPosition());
+//
+//
+//            resumeScreen();
+//
+//            return new DetailState();
+//        }
 
         if(view.equals(DetailView.class)
                 && code == CanaryFitMediatorCode.BACK) {
